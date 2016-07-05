@@ -11,7 +11,7 @@ var fm = new Freemarker({
 
 module.exports = function(source) {
     this.cacheable && this.cacheable();
-    var opts = merge(this.options['ftl-compiled-loader'] || {}, utils.parseQuery(this.query));
+    var opts = merge(this.options['ftl-loader'] || {}, utils.parseQuery(this.query));
     opts.client = true;
 
     // Skip compile debug for production when running with

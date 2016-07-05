@@ -13,7 +13,7 @@ To use [Freemarker.js by ijse](https://github.com/ijse/freemarker.js) use 1.2 br
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
 ``` javascript
-var template = require("ftl!./file.ejs");
+var template = require("ftl!./file.ftl");
 // => returns the template function compiled with ftl templating engine.
 
 // And then use it somewhere in your code
