@@ -35,7 +35,7 @@ Following options can be specified in query:
 ```javascript
 module: {
   loaders: [
-    {test: /\.ejs$/, loader: 'ftl?htmlmin'} // enable here
+    {test: /\.ftl$/, loader: 'ftl?htmlmin'} // enable here
   ]
 },
 'ftl-loader': {
