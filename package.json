@@ -1,0 +1,33 @@
+{
+  "name": "ftl-loader",
+  "version": "2.1.1",
+  "description": "Freemarker webpack loader (without frontend dependencies)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Justinidlerz/ftl-loader.git"
+  },
+  "keywords": [
+    "ftl",
+    "freemarker",
+    "webpack",
+    "loader",
+    "template"
+  ],
+  "author": "idler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Justinidlerz/ftl-loader/issues"
+  },
+  "homepage": "https://github.com/Justinidlerz/ftl-loader",
+  "dependencies": {
+    "freemarker.js": "^1.2.2",
+    "html-minifier": "^1.1.1",
+    "loader-utils": "^0.2.7",
+    "merge": "^1.2.0"
+  },
+  "devDependencies": {
+    "node-libs-browser": "^0.5.0",
+    "webpack": "^1.9.4"
+  }
+}
