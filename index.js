@@ -20,8 +20,6 @@ module.exports = function(source) {
         opts.compileDebug = false;
     }
 
-    // Use filenames relative to working dir, which should be project root
-    opts.filename = path.relative(process.cwd(), this.resourcePath);
 
     if (opts.htmlmin) {
         source = htmlmin.minify(source, opts['htmlminOptions'] || {});
@@ -29,7 +27,6 @@ module.exports = function(source) {
 
     var template = fm.renderSync(this.resourcePath, opts);
 
-    console.log(template)
 
     return 'module.exports = ' + template;
 };
